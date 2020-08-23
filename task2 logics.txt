@@ -1,0 +1,16 @@
+                                                              SPIDER ALGO TASK 2
+
+Code explanation
+
+Task 2(A):
+
+In the code we have input the no of testcases and the strings.
+For implementation, the idea is to take value of open bracket ‘<’ as 1 and value of close bracket ‘>’ as -1. Now start finding the prefix sum of the given string. The farthest index, say i, where the value of sum is 0 is the index up to which longest proper prefix exists. So, the answer would be i + 1.
+Then we have output the length of longest prefix for each string in the testcase.
+
+TASK(2B) (basic + hacker mode 1):
+
+In the code we have taken input of the no of elements in array and the no of queries. Where each query contains the two indices and the value with which the element in range of these indices needs to be updated.
+For implementation -initialize the array with size n+5 with all the 0's in it .Now ,for every query L, R, k increase array[L] by the value of k and decrease the value of array[R+1] by k last step would be to traverse the array and find the value of x which is equal to x+array[i] and compare the value of x+i with maxa at each step if the value of x+i is greater than maxa then maxa=x+i.
+Output the value of maxa .
+
